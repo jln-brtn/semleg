@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/semleg"
+     xml:base="https://w3id.org/semleg"
+     xmlns:iof="https://www.industrialontologies.org/core/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:semleg="https://w3id.org/semleg#">
+    <owl:Ontology rdf:about="https://w3id.org/semleg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/semleg#hasAct -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasAct">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Rule"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Act"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasCondition">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Act"/>
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Operator"/>
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasDefinition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasDefinition">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Source"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Definition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasLeftOperand -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasLeftOperand">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Operator"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Operand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasLink -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasLink">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Source"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Link"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasModality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasModality">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Rule"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Modality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasObject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasObject">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Rule"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasRightOperand -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasRightOperand">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Operator"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Operand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasRule -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasRule">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Source"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasSource -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasSource">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Link"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasSubSource -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasSubSource">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Source"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#hasSubject">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Rule"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/semleg#isDefined -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/semleg#isDefined">
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Act"/>
+        <rdfs:domain rdf:resource="https://w3id.org/semleg#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/semleg#Definition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <owl:equivalentClass rdf:resource="https://w3id.org/semleg#Resource"/>
+        <rdfs:label>independent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/norm.owl#Norm -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Norm">
+        <owl:equivalentClass rdf:resource="https://w3id.org/semleg#Modality"/>
+        <rdfs:label>Right</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#Act -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Act">
+        <owl:equivalentClass rdf:resource="https://www.industrialontologies.org/core/iof_00000013"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#Condition -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Condition"/>
+    
+
+
+    <!-- https://w3id.org/semleg#Definition -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Definition"/>
+    
+
+
+    <!-- https://w3id.org/semleg#Link -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Link"/>
+    
+
+
+    <!-- https://w3id.org/semleg#Modality -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Modality"/>
+    
+
+
+    <!-- https://w3id.org/semleg#NumericalCondition -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#NumericalCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#Operand -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Operand"/>
+    
+
+
+    <!-- https://w3id.org/semleg#Operator -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Operator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Operand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#ParallelConjunction -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#ParallelConjunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#Resource -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Resource"/>
+    
+
+
+    <!-- https://w3id.org/semleg#Rule -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Rule">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Operand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#SimpleDisjunction -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#SimpleDisjunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#Source -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Source"/>
+    
+
+
+    <!-- https://w3id.org/semleg#SpatialCondition -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#SpatialCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#SuccessiveConjunction -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#SuccessiveConjunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#TemporalCondition -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#TemporalCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/semleg#Undefined -->
+
+    <owl:Class rdf:about="https://w3id.org/semleg#Undefined">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/semleg#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.industrialontologies.org/core/iof_00000013 -->
+
+    <owl:Class rdf:about="https://www.industrialontologies.org/core/iof_00000013">
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
